@@ -1,0 +1,9 @@
+name: mpsc
+version: 0.1.0
+
+authors:
+  - Jamie Gaskins <jgaskins@gmail.com>
+
+crystal: 0.36.1
+
+license: MIT
