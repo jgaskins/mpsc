@@ -68,7 +68,9 @@ describe MPSC do
     channel.receive?.should eq nil
   end
 
-  it "blocks when receiving in another fiber" do
+  # This test case is important for when the channel is created in a constructor
+  # and then passed to another fiber to consume.
+  it "blocks when receiving in a fiber other than where it was created" do
     channel = MPSC::Channel(String).new
     main_channel = Channel(String).new(10) # NOT an MPSC channel!
 
