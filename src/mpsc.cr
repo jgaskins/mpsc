@@ -1,4 +1,4 @@
-# TODO: Write documentation for `Mpsc`
+# TODO: Write documentation for `MPSC`
 module MPSC
   VERSION = "0.1.0"
 
