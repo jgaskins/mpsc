@@ -82,7 +82,6 @@ describe MPSC do
 
   it "raises an error if you try to receive from a different fiber" do
     channel = MPSC::Channel(String).new
-    main_channel = Channel(String).new(10) # NOT an MPSC channel!
 
     spawn { channel.receive }
 
